@@ -1,0 +1,4 @@
+module HAL {
+    header "pointer_access.h"
+	export *
+}
