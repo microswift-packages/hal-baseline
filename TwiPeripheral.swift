@@ -1,7 +1,5 @@
 /// A Two Wire Interface peripheral.
 public protocol TwiPeripheral {
-  associatedtype ActionInterrupt: Interrupt where ActionInterrupt.Source == Self
-
   /// The Two Wire Interface peripheral's bit rate register.
   @inlinable @inline(__always)
   static var bitRateRegister: UInt8 { get set }

@@ -8,7 +8,6 @@ files:
 - PointerAddress.swift
 - RegisterValue.swift
 - UnsafeMutableRawBufferPointer+endswith.swift
-- main.swift
 - AdcAnalogPin.swift
 - AdcPeripheral.swift
 - AdcPrescaler.swift
@@ -56,6 +55,7 @@ files:
 - AsyncSerial+printer.swift
 - AsyncSerial.swift
 - HasTwi.swift
+- Twi.swift
 - TwiControlRegister.swift
 - TwiFailure.swift
 - TwiMaster.swift
@@ -122,6 +122,7 @@ files:
 - UartBaudRate.swift
 - UartModeConfig.swift
 - UartPeripheral.swift
+- Usart.swift
 - WatchdogTimeoutAt128kHz.swift
 - WatchdogTimeoutAt1MHz.swift
 - WatchdogTimeoutAt32kHz.swift

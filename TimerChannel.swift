@@ -7,8 +7,6 @@ public protocol TimerChannel {
   /// The timer type.
   associatedtype Timer: TimerWithChannelA & TimerPeripheral
 
-  associatedtype MatchInterrupt: Interrupt where MatchInterrupt.Source == Timer
-
   /// The timer's counter type.
   typealias Counter = Timer.Counter
 

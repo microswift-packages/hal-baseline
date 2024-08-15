@@ -3,9 +3,6 @@ public protocol TimerInputCapture {
   /// The timer type.
   associatedtype Timer: TimerPeripheral
 
-  /// The type of the interrupt that is triggered when the input capture value is updated.
-  associatedtype UpdateInterrupt: Interrupt where UpdateInterrupt.Source == Timer
-
   /// The type of the timer's counter value.
   typealias Counter = Timer.Counter
 

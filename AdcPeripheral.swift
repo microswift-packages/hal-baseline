@@ -5,8 +5,6 @@ public protocol AdcPeripheral {
   /// The type of the channel bitfield.
   associatedtype ChannelSelect: Bitfield
 
-  associatedtype ConversionCompleteInterrupt: Interrupt where ConversionCompleteInterrupt.Source == Self
-
   /// Has the ADC been enabled?
   @inlinable @inline(__always)
   static var enabled: Bool { get set }

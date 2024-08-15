@@ -8,9 +8,6 @@ public protocol TimerPeripheral {
   /// The ClockSelectField for the timer.
   associatedtype ClockSelect: ClockSelectField
 
-  /// The interrupt type for the timer overflow.
-  associatedtype OverflowInterrupt: Interrupt where OverflowInterrupt.Source == Self
-
   /// The counter register in its native size.
   @inlinable @inline(__always)
   static var counter: Counter { get }

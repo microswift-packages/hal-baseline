@@ -14,13 +14,6 @@ public protocol Timer8BitAsyncPeripheral: Timer8BitPeripheral {
   /// Is the timer configuration updating?
   @inlinable @inline(never)
   static var isConfigurationUpdating: Bool { get }
-
-  /// Configure the timer to use an external crystal oscillator.
-  /// It should be a 32.768 kHz crystal, connected between the TOSC1 and TOSC2 pins.
-  ///
-  /// - Parameter ticks: The tick frequency relative to the crystal.
-  @inlinable @inline(__always)
-  static func configureExternalCrystal(ticks: ClockSelect.TickFrequency)
 }
 
 /// An extension of Timer8BitAsyncPeripheral that supports an external

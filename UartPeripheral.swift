@@ -7,15 +7,6 @@ public protocol UartPeripheral {
   // from ever accidentally being used as an existential type
   associatedtype DataRegisterType: MutableRegisterValue
 
-  /// The type of "receive complete" interrupt.
-  associatedtype ReceiveCompleteInterrupt: Interrupt where ReceiveCompleteInterrupt.Source == Self
-
-  /// The type of "transmit complete" interrupt.
-  associatedtype TransmitCompleteInterrupt: Interrupt where TransmitCompleteInterrupt.Source == Self
-
-  /// The type of "data register empty" interrupt.
-  associatedtype DataRegisterEmptyInterrupt: Interrupt where DataRegisterEmptyInterrupt.Source == Self
-
   /// The data register type of the UART peripheral. This may be different to the ``DataRegister`` type
   typealias DataType = DataRegisterType.RegisterType
 
