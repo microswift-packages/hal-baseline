@@ -8,6 +8,7 @@ files:
 - PointerAddress.swift
 - RegisterValue.swift
 - UnsafeMutableRawBufferPointer+endswith.swift
+- Adc.swift
 - AdcAnalogPin.swift
 - AdcPeripheral.swift
 - AdcPrescaler.swift
@@ -51,6 +52,7 @@ files:
 - SignedIntegerFormatter.swift
 - StaticStringFormatter.swift
 - UnsignedIntegerFormatter.swift
+- Spi.swift
 - AsyncSerial+logger.swift
 - AsyncSerial+printer.swift
 - AsyncSerial.swift
